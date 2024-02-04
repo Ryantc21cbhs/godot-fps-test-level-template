@@ -11,10 +11,10 @@ var player_deaths = 0
 @export var start_Marker3D: Marker3D
 var time_elapsed = 0.0
 @export var game_end_time = 5
-@export var player_ammo = 3
+@export var player_ammo = 5
 @export var max_ammo = 3
 
-@export var ray_length = 10
+@export var ray_length = 100
 
 @export var time_paused: bool = false
 

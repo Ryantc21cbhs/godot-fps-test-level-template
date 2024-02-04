@@ -47,9 +47,9 @@ use_collision = true
 size = Vector3(2.18738, 1, 18.5942)
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="Marker3DPlayerSpawn"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.68167, -2.97159, -7.2981)
+transform = Transform3D(0.832516, -0.554, 0.000828726, 0.353241, 0.531979, 0.769558, -0.426776, -0.640377, 0.638576, 3.25204, -1.99592, -8.81527)
 use_collision = true
-radius = 2.40232
+radius = 4.21329
 
 [node name="CSGPolygon3D" type="CSGPolygon3D" parent="Marker3DPlayerSpawn"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.19895, -4.18467, -3.35719)
@@ -68,7 +68,7 @@ path_joined = false
 
 [node name="Player" parent="." node_paths=PackedStringArray("start_Marker3D") instance=ExtResource("2_6fl4n")]
 start_Marker3D = NodePath("../Marker3DPlayerSpawn")
-game_end_time = 10
+game_end_time = 15
 
 [node name="DeathPit" type="CSGMesh3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -25, 0)
@@ -88,15 +88,15 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 
 transform = Transform3D(0.396523, 0, 0.918025, 0, 1, 0, -0.918025, 0, 0.396523, -6.67384, -0.771372, -3.28981)
 
 [node name="PickupMelee" parent="." instance=ExtResource("4_2x8u5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.397982, -1.84006, -12.5455)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.94778, -19.1017, -26.8129)
 
 [node name="PickupMelee2" parent="." instance=ExtResource("4_2x8u5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.397982, -1.84006, -4.10151)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.58149, -1.6586, -14.1799)
 
 [node name="GunTarget" parent="." instance=ExtResource("5_2bndh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.33755, 0, -2.68019)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.943, -4.7164, -24.6326)
 
 [node name="GunTarget2" parent="." instance=ExtResource("5_2bndh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50262, 0, -3.33994)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.03733, -1.35275, -29.4318)
 
 [connection signal="body_entered" from="DeathPit/Area3D" to="." method="_on_area_3d_body_entered"]
